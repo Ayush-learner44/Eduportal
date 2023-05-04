@@ -24,7 +24,7 @@ dotenv.config();
 app.use(cookieParser())
 app.use(express.json())
 app.use(fileUpload({useTempFiles:true}));
-app.use(cors({ origin: ["https://eduportal-6qid.onrender.com/" , "http://localhost:3000"], credentials: true }))
+app.use(cors())
 app.use(function(req, res, next) {
   res.header('Content-Type', 'application/json;charset=UTF-8')
   res.header('Access-Control-Allow-Credentials', true)
