@@ -19,7 +19,7 @@ const ShowCourses = () => {
   const [data, setdata] = useState([]);
   const fetchData = async () => {
     try {
-      const resp = await fetch("http://localhost:4000/api/course");
+      const resp = await fetch("https://eduportal-7eqw.onrender.com/api/course");
       const apidata = await resp.json();
       console.log("Data", apidata);
       setdata(apidata);
@@ -34,7 +34,7 @@ const ShowCourses = () => {
     if (id && adminToken) {
       try {
         const result = await axios.delete(
-          `http://localhost:4000/api/course/${id}`
+          `https://eduportal-7eqw.onrender.com/api/course/${id}`
         );
         console.log(`Deleting course with id: ${id}`); // Add this line to log the user id
 

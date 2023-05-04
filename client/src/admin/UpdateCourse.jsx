@@ -54,7 +54,7 @@ const UpdateCourse = () => {
       console.log("this is the id:", courseId);
 
       const result = await axios.put(
-        `http://localhost:4000/api/course/${courseId}`,
+        `https://eduportal-7eqw.onrender.com/api/course/${courseId}`,
         courseData
       );
       if (result.data.msg) {

@@ -19,7 +19,7 @@ const ShowUsers = () => {
 
   const fetchData = async () => {
     try {
-      const resp = await axios.get("http://localhost:4000/api/user");
+      const resp = await axios.get("https://eduportal-7eqw.onrender.com/api/user");
       const apidata = resp.data;
       console.log("Data", apidata);
       setdata(apidata);
@@ -32,7 +32,7 @@ const ShowUsers = () => {
     if (id) {
       try {
         const result = await axios.delete(
-          `http://localhost:4000/api/user/${id}`
+          `https://eduportal-7eqw.onrender.com/api/user/${id}`
         );
         console.log(`Deleting user with id: ${id}`); // Add this line to log the user id
 
