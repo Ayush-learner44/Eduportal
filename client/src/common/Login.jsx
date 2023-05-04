@@ -41,8 +41,7 @@ const Login = () => {
       try {
         const result = await axios.post(
           "https://eduportal-backend.onrender.com/api/user/login",
-          loginDetails,
-          { withCredentials: true, credentials: "include" }
+          loginDetails
         );
         if (result.data.msg) {
           alert("Credentials Matched");
