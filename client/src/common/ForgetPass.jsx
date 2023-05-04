@@ -39,7 +39,7 @@ const ForgetPass = () => {
     if (email) {
       try {
         const result = await axios.post(
-          "https://eduportal-7eqw.onrender.com/mail",
+          "https://eduportal-backend.onrender.com/mail",
           loginDetails
         );
         if (result.data.msg) {

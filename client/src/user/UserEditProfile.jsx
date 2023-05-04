@@ -51,7 +51,7 @@ const UserEditProfile = () => {
 
     try {
       const result = await axios.put(
-        `https://eduportal-7eqw.onrender.com/api/user/update?msg=${token}`,
+        `https://eduportal-backend.onrender.com/api/user/update?msg=${token}`,
         userData,
         {
           headers: {

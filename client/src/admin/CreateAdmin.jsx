@@ -41,7 +41,7 @@ const CreateAdmin = () => {
 
       try {
         const result = await axios.post(
-          "https://eduportal-7eqw.onrender.com/api/admin/createAdmin",
+          "https://eduportal-backend.onrender.com/api/admin/createAdmin",
           adminData
         );
         if(result){

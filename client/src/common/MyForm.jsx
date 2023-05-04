@@ -38,7 +38,7 @@ const UserForm = () => {
       };
   
       axios
-        .post("https://eduportal-7eqw.onrender.com/api/user/", userData)
+        .post("https://eduportal-backend.onrender.com/api/user/", userData)
         .then((res) => {
           alert(res.data.msg);
           navigate('/services')

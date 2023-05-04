@@ -34,7 +34,7 @@ const UserNav = () => {
     
     try {
       const result = await axios.get(
-        `https://eduportal-7eqw.onrender.com/api/user/profile?msg=${token}`,
+        `https://eduportal-backend.onrender.com/api/user/profile?msg=${token}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

@@ -58,7 +58,7 @@ const Register = () => {
 
       try {
         const result = await axios.post(
-          "https://eduportal-7eqw.onrender.com/api/user/",
+          "https://eduportal-backend.onrender.com/api/user/",
           userData
         );
         alert("User Registered");

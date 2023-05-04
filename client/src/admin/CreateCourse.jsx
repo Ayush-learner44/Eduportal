@@ -55,7 +55,7 @@ const CreateCourse = () => {
 
       try {
         const result = await axios.post(
-          "https://eduportal-7eqw.onrender.com/api/course",
+          "https://eduportal-backend.onrender.com/api/course",
           courseData
         );
         if (result.data.msg) {

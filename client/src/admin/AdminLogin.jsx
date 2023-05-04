@@ -36,7 +36,7 @@ const AdminLogin = () => {
     if (name && password) {
       try {
         const result = await axios.post(
-          "https://eduportal-7eqw.onrender.com/api/admin/adminLogin",
+          "https://eduportal-backend.onrender.com/api/admin/adminLogin",
           loginDetails,
           { withCredentials: true, credentials: "include" }
         );

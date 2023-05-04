@@ -19,7 +19,7 @@ const ShowAdmins = () => {
   const fetchData = async () => {
     try {
      
-      const resp = await fetch("https://eduportal-7eqw.onrender.com/api/admin/");
+      const resp = await fetch("https://eduportal-backend.onrender.com/api/admin/");
       const apidata = await resp.json();
       console.log("Data", apidata);
       setdata(apidata);
